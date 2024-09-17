@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/14f08e28a3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logoname.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skillsection">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <h1>Hello, My Name is <span>Prince</span><br> and I'm a passionate web developer</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ---------about-------- -->
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg"/>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a passionate web developer, I craft immersive online experiences that captivate and inspire. With a keen interest in tech field and innovation , I'm always looking to learn and grow. I'm dedicated to creating responsive, user friendly and scalable web solutions that exceed expectations. I'm constantly exploring new ways to push the boundaries of web development.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiences')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li>C Programming</li>
+                            <li>Python</li>
+                            <li>Javascript</li>
+                        </ul>
+
+                        <h3>Front-end Development</h3>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                        </ul>
+
+                        <h3>Back-end Development</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                    
+                        </ul>
+
+                        <h3>Database Management</h3>
+                        <ul>
+                            <li>PostgreSQL</li>
+                        </ul>
+
+                    </div>
+
+                    <div class="tab-content" id="experiences">
+                        <h3>Web Development Hackathon</h3>
+                        <ul>
+                            <li>Participated in a competitive web development hackathon, showcasing innovative problem-solving skills and collaboration under tight deadlines.</li>
+                        </ul>
+
+                        <h3>Personal projects</h3>
+                        <ul>
+                            <li>Designed and developed multiple web applications using HTML,CSS, Javascript,React, Node.js and PostgreSQL, demonstrating proficiency in full-stack development</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <h3>Maharshi Dayanand University</h3>
+                        <ul>
+                            <li>Bachelor of Technology - BTech, Computer Science<br>Aug 2023 - Aug 2027</li>
+                        </ul>
+
+                        <h3>JB Knowledge Park, Faridabad (MDU, Rohtak)</h3>
+                        <ul>
+                            <li>Bachelor of Technology - BTech, Computer Science<br>Aug 2023 - Aug 2027</li>
+                        </ul>
+
+                        <h3>Rose Land Public School</h3>
+                        <ul>
+                            <li>Higher School / Senior Secondary School<br>2018 - 2022<br>X : 92.6%<br>XII : 90.8%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------skills--------->
+    <div id="skillsection">
+      <div class="container">
+          <h1 class="sub-title">My <span style="color: red;">Skills</span></h1>
+
+        
+
+          <div class="logos">
+              <div class="logo-row">
+                  <div class="logo-item">
+                      <img src="images/html.png"/>
+                      <p>HTML5</p>
+
+                    </div>
+                    <div class="logo-item">
+                      <img src="images/css.svg"/>
+                      <p>CSS</p>
+
+                    </div>
+                    <div class="logo-item">
+                      <img src="images/javascript.png"/>
+                      <p>Javascript</p>
+
+                    </div>
+                
+                </div>
+                <div class="logo-row">
+                   <div class="logo-item">
+                      <img src="images/react.png"/>
+                      <p>React</p>
+
+                    </div>
+                    <div class="logo-item">
+                      <img src="images/node.webp"/>
+                      <p>Node.js</p>
+
+                    </div>
+                    <div class="logo-item">
+                      <img src="images/Postgresql.png"/>
+                      <p>PostgreSQL</p>
+
+                    </div>
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------projects------- -->
+    
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Latest <span style="color: red;">Projects</span></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ToDoList.png"/>
+                    <div class="layer">
+                        <h3>To Do List</h3>
+                        <p>This app allows user to create,edit and delete tasks with ease.</p>
+                        <a href="https://ksqjp3.csb.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/simon.png"/>
+                    <div class="layer">
+                        <h3>Simon Game</h3>
+                        <p>The Simon Game is a classic memory game where players must repeat a sequence of colors in the same order as they appear on the same console.</p>
+                        <a href="https://prince2404.github.io/Simon_game/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/keeper.png"/>
+                    <div class="layer">
+                        <h3>NoteKeeper</h3>
+                        <p>NoteKeeper, a robust note-taking app built with React, allows user to create,edit and delete notes with ease.</p>
+                        <a href="https://7y2j23.csb.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+
+    <!-- ------contact------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col-1">
+                    <h1 class="sub-title">Contact <span style="color: red;">Me</span></h1>
+                    <p><i class="fa-solid fa-envelope"></i>  princeconnect2602@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  +91 9289177949</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1Cxa7aQJSt/?mibextid=qi2Omg"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/qr/L32ATRSLEXQVN1"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/prince_kr_gupta_01?igsh=aWpjczM0Z2ZkOXZp"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/prince-7a8b05280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-col-2">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button> 
+                    </form>
+                    <span id="msg"></span>
+
+                </div>
+            </div>
+
+        </div>
+        
+    </div> 
+    
+    <footer class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Prince. All rights reserved</p>
+    </footer>
+
+    <script src="index.js" charset="UTF-8"></script>
+    
+</body>
+</html>
